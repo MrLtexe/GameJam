@@ -22,7 +22,8 @@ public class Haraket : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isJumping == false)
         {
-            rb.AddForce(new Vector2(rb.velocity.x, jump));
+            rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset the vertical velocity before applying jump force
+            rb.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
             Debug.Log("Jump");
         }
     }
@@ -43,4 +44,3 @@ public class Haraket : MonoBehaviour
         }
     }
 }
-
