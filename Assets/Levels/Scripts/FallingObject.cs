@@ -4,7 +4,7 @@ public class FallingObject : MonoBehaviour
 {
     public float fallSpeed = 10f;
     public GameObject startPoint;
-    public GameObject Player;
+    public GameObject player;
 
     private void Start()
     {
@@ -21,15 +21,15 @@ public class FallingObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the colliding object is the player
         if (other.gameObject.CompareTag("Player"))
         {
-            Player.transform.position = startPoint.transform.position;
-
-            // Reset player rotation to identity (no rotation)
-            Player.transform.rotation = Quaternion.identity;
+            Debug.Log("Player entered trigger!");
+            // Move the player to the respawn point
+            player.transform.position = startPoint.transform.position;
+            Debug.Log("Player respawned at start point!");
         }
     }
 }
