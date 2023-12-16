@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -21,11 +22,27 @@ public class MovingPlatform : MonoBehaviour
 
         float distance = (target - (Vector2)platform.position).magnitude;
 
-            if (distance <= 0.1f)
+        if (distance <= 0.1f)
         {
             direction *= -1;
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.transform.SetParent(this.transform);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.transform.SetParent(null);
+        }
     }
 
     Vector2 currentMovementTarger()

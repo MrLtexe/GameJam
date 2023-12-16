@@ -13,6 +13,8 @@ public class Haraket : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        rb.freezeRotation = true;
     }
 
     void Update()
