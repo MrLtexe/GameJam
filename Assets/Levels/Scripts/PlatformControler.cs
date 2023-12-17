@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlatformControler : MonoBehaviour
 {
-    public Transform start, end;
+    public Transform A, B;
     public int speed;
     Vector2 targetPos;
 
@@ -12,15 +12,15 @@ public class PlatformControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetPos = end.position;
+        targetPos = B.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(transform.position, start.position) < .1f) targetPos = end.position;
+        if (Vector2.Distance(transform.position, A.position) < .1f) targetPos = B.position;
 
-        if (Vector2.Distance(transform.position, end.position) < .1f) targetPos = start.position;
+        if (Vector2.Distance(transform.position, B.position) < .1f) targetPos = A.position;
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
     }
