@@ -2665,7 +2665,7 @@ Transform:
   m_GameObject: {fileID: 367195962}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.6374, y: -6.8017364, z: 0.81529975}
+  m_LocalPosition: {x: -18.6374, y: -6.86, z: 0.81529975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3627,7 +3627,7 @@ Transform:
   m_GameObject: {fileID: 503043481}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -37.202927, y: -6.8017364, z: 0.81529975}
+  m_LocalPosition: {x: -37.202927, y: -6.83, z: 0.81529975}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4808,7 +4808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d624b6b65f59845a68330cea6a1532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 2
+  sceneBuildIndex: 4
 --- !u!61 &754240209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5778,11 +5778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1571206185279050414, guid: 294e8a4730c21934c9441f37f6ea325c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.04
+      value: -19.4
       objectReference: {fileID: 0}
     - target: {fileID: 1571206185279050414, guid: 294e8a4730c21934c9441f37f6ea325c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.14
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1571206185279050414, guid: 294e8a4730c21934c9441f37f6ea325c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5937,7 +5937,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2792232, y: 0.34050864}
+  m_Offset: {x: -0.2792232, y: 0.7969618}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5948,7 +5948,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4213183, y: 4.408442}
+  m_Size: {x: 1.4213183, y: 3.4955359}
   m_EdgeRadius: 0
 --- !u!4 &1027522348 stripped
 Transform:
